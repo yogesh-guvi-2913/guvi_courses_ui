@@ -1,0 +1,503 @@
+.home {
+  width: 100%;
+  position: relative;
+  margin-top: 38px;
+}
+
+.gradient_bg {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.top_home {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.top_home_left {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.top_home_right {
+  width: 45%;
+  position: relative;
+}
+
+.top_home_left_top {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  margin-top: 0;
+}
+
+.top_home_left_top span {
+  background: linear-gradient(to right, #b900fa 0%, #7926ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.top_home_left_bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0px;
+  gap: 8px;
+}
+
+.top_home_left_bottom_items {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form_container {
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 0px;
+  isolation: isolate;
+  width: 90%;
+  border-radius: 16px;
+  border: 0.1px solid #664d5f;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  gap: 32px;
+}
+
+.form_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/image.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 16px;
+  opacity: 0.3;
+  z-index: 1; /* Ensure image is above the color overlay */
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+  backdrop-filter: blur(40px);
+}
+
+/* Optional: Additional overlay styles */
+.form_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.02); /* Color overlay */
+  backdrop-filter: blur(0.6px); /* Apply blur effect */
+  z-index: 2; /* Ensure overlay is above both the image and the background */
+  pointer-events: none; /* Allow clicks to pass through */
+  border-radius: 16px;
+}
+
+.form_container h2 {
+  position: relative;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  flex: none;
+  flex-grow: 0;
+  z-index: 3;
+}
+
+.gradient_form_top {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffdd63;
+  filter: blur(40px);
+  z-index: 10;
+}
+
+.gradient_form_down {
+  bottom: 75px;
+  left: 20%;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #6c63ff;
+  filter: blur(130px);
+  z-index: 10;
+}
+
+.form_content {
+  position: relative;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Add this line to ensure the content takes up remaining space */
+  justify-content: flex-start; /* Align the form items at the top */
+  padding: 0px;
+  font-size: 16px;
+  z-index: 20;
+}
+
+.form_content input::placeholder {
+  color: rgba(218, 218, 218, 1);
+  font-size: 16px;
+}
+
+.form_content_item {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.form_content_btn {
+  width: 100%;
+  margin-top: 30px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 20;
+}
+
+.name {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  flex: none;
+  padding-left: 16px;
+  background: #ffffff;
+  border: 1px solid #7e8e9f;
+  border-radius: 8px;
+}
+
+/* Rectangle 3112 */
+
+.email {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  flex: none;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #7e8e9f;
+  border-radius: 8px;
+}
+
+/* Phone Label */
+.form_content label {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Remove background color for the intl-tel-input container */
+.iti {
+  width: 100%;
+  display: flex;
+  height: 48px;
+  gap: 8px;
+}
+
+.iti__country-container {
+  position: relative !important;
+  background-color: white;
+  border-radius: 8px;
+  color: rgba(218, 218, 218, 1);
+  padding: 0px 15px;
+  z-index: 1500;
+}
+
+.iti__tel-input {
+  padding: 5px !important;
+}
+
+.iti__country-name {
+  color: black;
+}
+
+.iti__dropdown-content {
+  position: absolute;
+  z-index: 50 !important;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px; /* Fixed the padding syntax */
+  width: 100%;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bottom_home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 10px; /* Dark background similar to the image */
+  z-index: 0;
+}
+
+.course-info-item {
+  position: relative;
+  padding: 24px;
+  padding-bottom: 48px;
+  width: 32.5%;
+  background: rgba(255, 255, 255, 0.09); /* Inner content background */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(32px);
+  border-radius: 16px;
+  color: white;
+  gap: 8px;
+  isolation: isolate;
+  margin-bottom: 37px;
+}
+
+.course-info-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 1px; /* Border thickness */
+  background: linear-gradient(to right, #0e0017, #ffffff);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.course-info-label {
+  position: absolute;
+  background-color: #b900fa;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(121, 38, 255, 0.6) 0%,
+    rgba(185, 0, 250, 0.6) 100%
+  );
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  left: 8px;
+  top: -21px;
+  isolation: isolate;
+}
+
+.course-info-value {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .top_home_left_bottom_items {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .home {
+    width: 100%;
+    margin-top: 27px;
+    padding-bottom: 42px;
+  }
+  .top_home {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .top_home_left {
+    width: 72%;
+    align-items: center;
+    margin-bottom: 84px;
+  }
+  .top_home_left_top {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .top_home_left_top span {
+    font-weight: 700;
+  }
+
+  .top_home_left_bottom_items {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .top_home_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form_container {
+    float: unset;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .course-info-item {
+    width: 90%;
+    margin-bottom: 22px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .home {
+    width: 100%;
+    margin-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  .gradient_bg {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #4b0095;
+    filter: blur(90px);
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  .top_home {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .top_home_left {
+    width: 72%;
+    align-items: center;
+    margin-bottom: 84px;
+  }
+  .top_home_left_top {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .top_home_left_top span {
+    font-weight: 700;
+  }
+
+  .top_home_left_bottom_items {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .top_home_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form_container {
+    float: unset;
+  }
+
+  .iti__country-container {
+    padding-left: 0px;
+    padding-right: 7px;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .course-info-item {
+    width: 90%;
+    margin-bottom: 22px;
+  }
+
+  .top_home_left_bottom_items {
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .top_home_left_bottom_items {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12.5px;
+  }
+}

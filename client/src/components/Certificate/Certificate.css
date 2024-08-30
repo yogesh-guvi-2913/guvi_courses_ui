@@ -1,0 +1,86 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 83px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.certificate p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.8213px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+
+/* styles.css */
+
+.keen-slider__slide.group {
+  display: flex;
+  gap: 16px;
+}
+
+.sub-slide {
+  width: 23%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e2cdff;
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.dot.active {
+  background-color: #7a3bd7;
+}
+
+@media (max-width: 560px) {
+  .certificate {
+    width: 100%;
+    background-color: #f6f7f8;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .sub-slide img {
+    width: 156px;
+    height: 72px;
+  }
+
+  .certificate p {
+    color: black;
+    font-weight: 500;
+  }
+
+  .keen-slider {
+    max-width: 100%; /* Ensure the slider uses full available width */
+  }
+
+  .dot {
+    background-color: #9bf8a1;
+  }
+
+  .dot.active {
+    background-color: #0dba4b;
+  }
+}

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+.App {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: url("./assets/arc-bg.png") left 0 top 0 no-repeat,
+    url("./assets/arc-bg-right.svg") right 0 top 950px no-repeat,
+    url("./assets/arc-bg-bt-lt.svg") left 0 top 2300px no-repeat,
+    url("./assets/arc-bg-bt-rt.svg") right 0 top 3700px no-repeat;
+}
+
+.container {
+  padding: unset;
+}
+
+.App_content {
+  width: 66%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .App {
+    flex: none;
+  }
+
+  .App_content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    flex: none;
+  }
+
+  .App_content {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .App {
+    flex: none;
+    background: url("./assets/mobile-bg-top.svg") right 0 top 0 no-repeat,
+      url("./assets/mobile-bg-middle.svg") right 0 top 575px no-repeat,
+      url("./assets/mobile-top-bottom.svg") left 0 top 4212px no-repeat;
+    background-size: 480px 800px, auto, auto;
+  }
+
+  .App_content {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .App {
+    flex: none;
+    background: url("./assets/mobile-bg-top.svg") right 0 top 0 no-repeat,
+      url("./assets/mobile-bg-middle.svg") right 0 top 575px no-repeat,
+      url("./assets/mobile-top-bottom.svg") left 0 top 4212px no-repeat;
+    background-size: 375px 800px, auto, auto;
+  }
+
+  .App_content {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .App {
+    flex: none;
+    background: url("./assets/mobile-bg-top.svg") right 0 top 0 no-repeat,
+      url("./assets/mobile-bg-middle.svg") right 0 top 575px no-repeat,
+      url("./assets/mobile-top-bottom.svg") left 0 top 4212px no-repeat;
+    background-size: 320px 900px, auto, auto;
+  }
+
+  .App_content {
+    width: 100%;
+    overflow: hidden;
+  }
+}

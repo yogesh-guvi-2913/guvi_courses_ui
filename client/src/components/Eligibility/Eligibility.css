@@ -1,0 +1,96 @@
+.Eligibility {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.Eligibility_content {
+  width: 66%;
+  background-color: white;
+  padding: 32px 32px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.Eligibility_content_ele {
+  width: 100%;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #1e1e1e;
+  flex: none;
+  flex-grow: 0;
+}
+
+.Eligibility_content_ele p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.ullist {
+  margin-bottom: 0px;
+}
+
+.Eligibility_content_title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0px;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.Eligibility_content button {
+  width: 100%;
+  padding: 16px 24px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  color: #ffffff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  border: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .Eligibility {
+    margin-bottom: unset;
+  }
+  .Eligibility_content {
+    width: 100%;
+    border-radius: unset;
+    padding: 64px 16px;
+    gap: 24px;
+  }
+
+  .Eligibility_content button {
+    margin-top: 0px;
+    padding: 15px 24px;
+  }
+
+  .Eligibility_content_ele p {
+    margin-top: 24px;
+  }
+}

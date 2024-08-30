@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0e0017;
+  color: white;
+}
+
+@media only screen and (max-width: 560px) {
+  body {
+    background: rgba(14, 0, 23, 1);
+  }
+}

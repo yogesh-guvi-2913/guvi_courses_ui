@@ -1,0 +1,177 @@
+.syllabus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.syllabus_content {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.syllabus_content_txt {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}
+
+.syllabus_content P {
+  width: 100%;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+
+.syl_btn {
+  padding: 16px 24px;
+  width: 49%;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 40px;
+  border: none;
+}
+
+.accor {
+  width: 100%;
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  --bs-accordion-btn-focus-box-shadow: unset;
+}
+
+.accordion .accordion-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  isolation: isolate;
+  border: unset;
+}
+
+.accordion .accordion-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 1.2px; /* Border thickness */
+  background: linear-gradient(
+    to left bottom,
+    #0e0017,
+    #8d8791
+  ); /* Gradient border */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Accordion header styling */
+.accordion .accordion-header {
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+}
+
+span {
+  font-weight: 400;
+  margin-right: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Accordion header styling with black background and white text */
+.accordion-button {
+  background: rgba(255, 255, 255, 0.02);
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  color: white !important;
+  background-image: unset;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: unset; /* Sets background color to red when active */
+  color: white !important; /* Ensures text color remains white */
+  box-shadow: none !important; /* Removes default box shadow */
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion .accordion-body {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding-top: 0px !important;
+}
+
+@media only screen and (max-width: 560px) {
+  .syllabus {
+    padding: 64px 16px;
+    margin-top: 0px;
+  }
+  .syllabus_content {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .syl_btn {
+    width: 100%;
+    margin-top: 0px;
+    padding: 15px 24px;
+  }
+  .syllabus_content_txt {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .syllabus_content p {
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+  span {
+    margin-right: 3px;
+  }
+
+  .accordion-button {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
